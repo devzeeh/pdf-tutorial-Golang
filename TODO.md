@@ -2,9 +2,9 @@
 
 Project Timeline:
 
-- Started: <span style="color: #58a6ff ;">September 22, 2025</span>
-- Target Completion: <span style="color: #9461ecff   ;">December 2025</span>
-- Last Updated: <span style="color: #f59e0b  ;">September 23, 2025</span>
+- Started: `September 22, 2025`
+- Target Completion: `December 2025`
+- Last Updated: `September 23, 2025`
 
 ---
 
