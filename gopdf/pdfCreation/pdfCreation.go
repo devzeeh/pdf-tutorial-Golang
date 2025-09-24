@@ -3,13 +3,14 @@ package main
 import (
 	"fmt"
 	_ "log"
+	_ "strings"
 
 	"github.com/signintech/gopdf"
 )
 
 var (
 	pdfFolder = "gopdfExample/"
-	//pdfPageSetup   = "example.pdf"
+	//pdfPageSetup = "example.pdf"
 )
 
 func main() {
@@ -41,10 +42,10 @@ func createHelloWorldPDF() {
 
 	// Add font with proper fallback
 	fontName := "arial"
-	err := pdf.AddTTFFont(fontName, "./fonts/arial.ttf") // Try local fonts directory first
+	err := pdf.AddTTFFont(fontName, "./fonts/arial.ttf")
 	if err != nil {
 		// Try system font on Windows
-		err = pdf.AddTTFFont(fontName, "C:/Windows/Fonts/arial.ttf") // Windows system font path
+		err = pdf.AddTTFFont(fontName, "C:/Windows/Fonts/arial.ttf")
 		if err != nil {
 			// Use built-in PostScript font as final fallback
 			fontName = "Times-Roman"
@@ -227,8 +228,21 @@ func createTextFormattingPDF() {
 	pdf.SetXY(50, yPos+180+lineHeight)
 	pdf.Text("Line 2 - Wide spacing")
 
-	pdf.WritePdf(pdfFolder + "text-formatting-example.pdf")
-	fmt.Println("Created: text-formatting-example.pdf to", pdfFolder, "folder")
+	// Add text wrapping example
+	pdf.SetFont(regularFont, "", 12)
+	pdf.SetXY(50, yPos+230)
+	pdf.Text("Text Wrapping Example:")
+
+	// Use the wrapText function
+	longText := "This is a long text that needs to be wrapped across multiple lines to demonstrate text wrapping functionality "
+	finally := wrapText(&pdf, longText, 50, yPos+250, 400) // 400pt max width
+
+	// Use finalY to position next content
+	pdf.SetXY(50, finally+10)
+	pdf.Text("Content continues after wrapped text...")
+
+	pdf.WritePdf(pdfFolder + "text-formatting-example1.pdf")
+	fmt.Println("Created: text-formatting-example1.pdf to", pdfFolder, "folder")
 }
 
 // Example 4: Multiple pages handling
