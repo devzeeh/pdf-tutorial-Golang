@@ -1,6 +1,8 @@
 # pdf-tutorial-Golang
 
-> **Notes:** _This project is currently under development. New examples and features are added regularly. Check the [`TODO.md`](TODO.md) for current progress._
+> **Notes:** This project is currently under development. New examples and features are added regularly. Check the [`TODO.md`](TODO.md) for current progress.
+>
+> This Tutorial is for Beginners! Designed specifically for newbies and Go developers who just started in Go.
 
 ### Project Timeline:
 
@@ -21,4 +23,4 @@ This repository is a tutorial for working with PDF files in Golang. You will fin
 - **pdfcpu** - For PDF manipulation and security features
 - **maroto** - For structured documents like invoices and reports
 
-> The project is designed for developers who want to learn how to work with PDFs using Go. Each example is clearly explained in the code to help you understand and implement PDF features in your own projects.
+The project is designed for **newbies and developers who just started in Go** and want to learn how to work with PDFs using Go. Each example is explained in the code to help you understand and implement PDF features in your own projects.
