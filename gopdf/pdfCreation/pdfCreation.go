@@ -9,7 +9,10 @@ import (
 )
 
 var (
-	pdfFolder = "gopdfExample/"
+	goPdfFolder      = "gopdfExample/"     // Base folder for all examples
+	pdfCreation      = "pdfCreation/"      // Folder for PDF creation examples
+	textHandling     = "textHandling/"     // Folder for text handling examples
+	advancedFeatures = "advancedFeatures/" // Folder for advanced features examples
 	//pdfPageSetup = "example.pdf"
 )
 
@@ -59,9 +62,9 @@ func createHelloWorldPDF() {
 	pdf.Cell(nil, "Hello World from GoPDF!")
 
 	// Save PDF
-	pdf.WritePdf(pdfFolder + "hello-world.pdf")
+	pdf.WritePdf(goPdfFolder + "hello-world.pdf")
 
-	fmt.Println("Created: hello-world.pdf to", pdfFolder, "folder")
+	fmt.Println("Created: hello-world.pdf to", goPdfFolder, "folder")
 }
 
 // Example 2: Page setup and configuration
@@ -132,8 +135,8 @@ func createPageSetupPDF() {
 	pdf.SetXY(50, 80)
 	pdf.Text(fmt.Sprintf("Size: %.0f x %.0f points", customSize.W, customSize.H))
 
-	pdf.WritePdf(pdfFolder + "page-setup-example.pdf")
-	fmt.Println("Created: page-setup-example.pdf to ", pdfFolder, "folder")
+	pdf.WritePdf(goPdfFolder + "page-setup-example.pdf")
+	fmt.Println("Created: page-setup-example.pdf to ", goPdfFolder, "folder")
 }
 
 // Helper function to safely set up font
@@ -241,8 +244,8 @@ func createTextFormattingPDF() {
 	pdf.SetXY(50, finally+10)
 	pdf.Text("Content continues after wrapped text...")
 
-	pdf.WritePdf(pdfFolder + "text-formatting-example1.pdf")
-	fmt.Println("Created: text-formatting-example1.pdf to", pdfFolder, "folder")
+	pdf.WritePdf(goPdfFolder + "text-formatting-example1.pdf")
+	fmt.Println("Created: text-formatting-example1.pdf to", goPdfFolder, "folder")
 }
 
 // Example 4: Multiple pages handling
@@ -314,8 +317,8 @@ func createMultiPagePDF() {
 		yPos += 25
 	}
 
-	pdf.WritePdf(pdfFolder + "multi-page-example.pdf")
-	fmt.Println("Created: multi-page-example.pdf to", pdfFolder, "folder")
+	pdf.WritePdf(goPdfFolder + "multi-page-example.pdf")
+	fmt.Println("Created: multi-page-example.pdf to", goPdfFolder, "folder")
 }
 
 // Helper function to demonstrate advanced text wrapping (bonus)
