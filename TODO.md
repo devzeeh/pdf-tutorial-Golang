@@ -6,7 +6,7 @@ Project Timeline:
 
 - Started: `September 22, 2025`
 - Target Completion: `December 2025`
-- Last Updated: `September 24, 2025`
+- Last Updated: `October 5, 2025`
 - Actual Completion: `
 
 ---
@@ -41,10 +41,10 @@ Project Timeline:
   - [x] Multiple pages handling
 
 - **Text Handling with gopdf**
-  - [ ] Font management and embedding
-  - [ ] Text positioning and alignment
-  - [ ] Line spacing and paragraph formatting
-  - [ ] UTF-8 and special character support
+  - [x] Font management and embedding
+  - [x] Text positioning and alignment
+  - [x] Line spacing and paragraph formatting
+  - [x] UTF-8 and special character support
 
 - **Advanced gopdf Features**
   - [ ] Adding images (PNG, JPEG)
