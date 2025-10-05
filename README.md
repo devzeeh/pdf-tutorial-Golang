@@ -5,7 +5,6 @@
 > This Tutorial is for Beginners! Designed specifically for newbies and Go developers who just started in Go.
 
 ### Project Timeline:
-
 - Started: `September 22, 2025`
 - Target Completion: `December 2025`
 - Actual Completion: `
@@ -24,3 +23,8 @@ This repository is a tutorial for working with PDF files in Golang. You will fin
 - **maroto** - For structured documents like invoices and reports
 
 The project is designed for **newbies and developers who just started in Go** and want to learn how to work with PDFs using Go. Each example is explained in the code to help you understand and implement PDF features in your own projects.
+
+---
+
+## Acknowledgments
+This tutorial was developed with the assistance of *Claude*. The examples, code structure, and documentation were created through collaborative prompting to ensure beginner-friendly, comprehensive learning materials for the Go community.
