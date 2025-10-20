@@ -47,11 +47,11 @@ Project Timeline:
   - [x] UTF-8 and special character support
 
 - **Advanced gopdf Features**
-  - [ ] Adding images (PNG, JPEG)
-  - [ ] Drawing shapes and lines
-  - [ ] Creating tables and grids
-  - [ ] Headers and footers implementation
-  - [ ] Page numbering with gopdf
+  - [x] Adding images (PNG, JPEG)
+  - [x] Drawing shapes and lines
+  - [x] Creating tables and grids
+  - [x] Headers and footers implementation
+  - [x] Page numbering with gopdf
 ---
 
 ## Encrypting PDF Documents (using pdfcpu)
