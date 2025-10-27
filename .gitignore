@@ -1,1 +1,4 @@
 .env
+
+# ignoring the txt file
+sample.txt
