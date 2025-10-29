@@ -62,9 +62,9 @@ func createHelloWorldPDF() {
 	pdf.Cell(nil, "Hello World from GoPDF!")
 
 	// Save PDF
-	pdf.WritePdf(goPdfFolder + "hello-world.pdf")
+	pdf.WritePdf(goPdfFolder + pdfCreation + "hello-world.pdf")
 
-	fmt.Println("Created: hello-world.pdf to", goPdfFolder, "folder")
+	fmt.Println("Created: hello-world.pdf to", goPdfFolder+pdfCreation, "folder")
 }
 
 // Example 2: Page setup and configuration
@@ -135,8 +135,8 @@ func createPageSetupPDF() {
 	pdf.SetXY(50, 80)
 	pdf.Text(fmt.Sprintf("Size: %.0f x %.0f points", customSize.W, customSize.H))
 
-	pdf.WritePdf(goPdfFolder + "page-setup-example.pdf")
-	fmt.Println("Created: page-setup-example.pdf to ", goPdfFolder, "folder")
+	pdf.WritePdf(goPdfFolder + pdfCreation + "page-setup-example.pdf")
+	fmt.Println("Created: page-setup-example.pdf to ", goPdfFolder+pdfCreation, "folder")
 }
 
 // Helper function to safely set up font
@@ -244,8 +244,8 @@ func createTextFormattingPDF() {
 	pdf.SetXY(50, finally+10)
 	pdf.Text("Content continues after wrapped text...")
 
-	pdf.WritePdf(goPdfFolder + "text-formatting-example1.pdf")
-	fmt.Println("Created: text-formatting-example1.pdf to", goPdfFolder, "folder")
+	pdf.WritePdf(goPdfFolder + pdfCreation + "text-formatting-example1.pdf")
+	fmt.Println("Created: text-formatting-example1.pdf to", goPdfFolder+pdfCreation, "folder")
 }
 
 // Example 4: Multiple pages handling

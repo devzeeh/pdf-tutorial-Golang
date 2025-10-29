@@ -46,14 +46,6 @@ func main() {
 
 	// Example 5: Page Numbering
 	addPageNumberingExample(&pdf)
-
-	// Save the PDF
-	/*err = pdf.WritePdf(advancedFeatures +"advanced_gopdf_features.pdf")
-	if err != nil {
-		log.Fatal("Error saving PDF:", err)
-	}*/
-
-	//fmt.Println("PDF created successfully to", advancedFeatures, "folder")
 }
 
 // Example 1: Adding Images (PNG, JPEG)

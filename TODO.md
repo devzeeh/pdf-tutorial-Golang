@@ -1,12 +1,12 @@
 # TODO List for `github.com/devzeeh/pdf-tutorial-Golang`
 
-> **Notes**: *This project is currently under active development. Examples and documentation are being added regularly.*
+> **Notes**: *This project is currently under <!--active--> development. Examples and documentation are being added regularly.*
 
 Project Timeline:
 
 - Started: `September 22, 2025`
 - Target Completion: `December 2025`
-- Last Updated: `October 20, 2025`
+- Last Updated: `October 28, 2025`
 - Actual Completion: `
 
 ---
@@ -56,8 +56,8 @@ Project Timeline:
 
 ## Encrypting PDF Documents (using pdfcpu)
 - **Setup pdfcpu**
-  - [ ] Install `github.com/pdfcpu/pdfcpu` library
-  - [ ] Create project structure for encryption examples
+  - [x] Install `github.com/pdfcpu/pdfcpu` library
+  - [x] Create project structure for encryption examples
   - [ ] Add pdfcpu CLI tool installation guide
 
 - **Basic PDF Encryption**
